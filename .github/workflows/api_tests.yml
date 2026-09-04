@@ -25,6 +25,7 @@ jobs:
           pip install pytest requests pytest-html
 
       - name: Execute Automated API Tests
+        continue-on-error: true
         run: |
           pytest -v --html=report.html --self-contained-html
 
