@@ -1,0 +1,20 @@
+[
+  {
+    "case": "Valid Login",
+    "payload": {"email": "testuser@example.com", "password": "Password123"},
+    "expected_status": [200, 302],
+    "expected_text": "blue horizon"
+  },
+  {
+    "case": "Invalid Password",
+    "payload": {"email": "testuser@example.com", "password": "WrongPassword!"},
+    "expected_status": [200, 400, 401],
+    "expected_text": "login"
+  },
+  {
+    "case": "Empty Email",
+    "payload": {"email": "", "password": "Password123"},
+    "expected_status": [200, 400, 422],
+    "expected_text": "login"
+  }
+]

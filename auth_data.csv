@@ -1,0 +1,4 @@
+email,password,expected_status
+valid.qa@example.com,Password123,200
+wrong.user@example.com,Password123,401
+valid.qa@example.com,short,400
