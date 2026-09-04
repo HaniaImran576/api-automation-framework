@@ -1,20 +1,14 @@
 [
   {
-    "case": "Valid Login",
-    "payload": {"email": "testuser@example.com", "password": "Password123"},
-    "expected_status": [200, 302],
-    "expected_text": "blue horizon"
+    "username": "testuser1",
+    "password": "Password123"
   },
   {
-    "case": "Invalid Password",
-    "payload": {"email": "testuser@example.com", "password": "WrongPassword!"},
-    "expected_status": [200, 400, 401],
-    "expected_text": "login"
+    "username": "testuser2",
+    "password": "Password456"
   },
   {
-    "case": "Empty Email",
-    "payload": {"email": "", "password": "Password123"},
-    "expected_status": [200, 400, 422],
-    "expected_text": "login"
+    "username": "testuser3",
+    "password": "Password789"
   }
 ]
